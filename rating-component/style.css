@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Overpass", sans-serif;
+  list-style-type: none;
+}
+
+body {
+  background-color: #141519;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  font-size: 16px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+  background-color: #1e252f;
+  width: 25em;
+  border-radius: 2em;
+}
+
+.icon-star {
+  background-color: #262f38;
+  padding: 0.7em;
+  border-radius: 50%;
+  margin-bottom: 1em;
+}
+.title {
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+.paragraph {
+  color: #5f6770;
+  line-height: 1.5;
+  font-size: 1em;
+  margin-bottom: 1em;
+}
+
+.rating-numbers {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5em;
+  margin-bottom: 1.5em;
+}
+
+.rating-number-item {
+  width: 3.5em;
+  height: 3.5em;
+  background-color: #262f38;
+  color: #5f6770;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  transition: 150ms all ease-in-out;
+  border: none;
+}
+
+.rating-number-item:hover {
+  background-color: hsl(25, 97%, 53%);
+  cursor: pointer;
+  color: white;
+}
+.rating-number-item:focus,
+.rating-number-item:active {
+  background-color: #5f6770;
+  cursor: pointer;
+  color: white;
+}
+
+.submit-rating {
+  padding: 1em 0;
+  background-color: hsl(25, 97%, 53%);
+  border: none;
+  text-transform: uppercase;
+  color: white;
+  border-radius: 2em;
+  letter-spacing: 2px;
+  font-weight: bold;
+  width: 100%;
+  transition: 150ms all ease;
+}
+
+.submit-rating:hover {
+  background-color: hsl(25, 100%, 58%);
+  cursor: pointer;
+}
+
+.submit-rating:active {
+  background-color: white;
+  color: hsl(25, 97%, 53%);
+}
+
+/* THANK YOU STATE */
+
+#thankYouState {
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.thank-you-state > div {
+  margin: 1em;
+}
+
+.result {
+  background-color: #262f38;
+  padding: 0.6em 1em;
+  border-radius: 2em;
+  color: hsl(25, 100%, 58%);
+  font-size: 1em;
+}
+
+.card .thank-you-title {
+  margin-bottom: 0em;
+}
+
+.thank-you-paragraph {
+  color: #9c9c9c;
+  text-align: center;
+}
+
+@media (max-width:480px) {
+  body{
+    font-size: 13px;
+  }
+
+}
